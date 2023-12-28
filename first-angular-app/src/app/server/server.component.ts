@@ -4,7 +4,12 @@ import { Component } from "@angular/core"
     //HTML tag to access component
     selector: `app-server`,
     // Pointer to the HTML file we want to use as a template
-    templateUrl: "./server.component.html"
+    templateUrl: "./server.component.html",
+    styles: [`
+        .online {
+            color: white;
+        }
+    `]
 })
 export class ServerComponent {
     serverId: number = 10;
